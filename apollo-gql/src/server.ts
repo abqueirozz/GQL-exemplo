@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 import { UserResolver } from "./graphql/resolver";
 
 export async function runServer() {
+  
   const schema = await buildSchema({
     resolvers: [UserResolver],
     emitSchemaFile: resolve(__dirname, "schema.gql"),

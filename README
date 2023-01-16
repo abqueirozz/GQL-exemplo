@@ -35,7 +35,7 @@
 
 # Desvantagens
 
-- Mais verboso.
+- Mais verboso em comparação ao REST.
 - Pode gerar overkill para pequenas aplicações.
 - Só aceita formato JSON.
 
