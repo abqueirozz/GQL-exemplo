@@ -13,7 +13,6 @@ type Mutation {
 }
 
 type Query {
-  getUserTest(user: userInput!): userModule!
   getUsers: [userModule!]!
   getUsersByEmail(email: String!): userModule!
   hello(greeting: String!): String!

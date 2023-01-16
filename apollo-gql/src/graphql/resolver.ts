@@ -16,17 +16,7 @@ export class UserResolver {
   async hello(@Arg("greeting") greeting: String) {
     return `Hello ${greeting}`;
   }
-
-  @Query(() => userModule)
-  async getUserTest(@Arg("user") user: userInput) {
-    const userResponse = {
-      ...user,
-      phone: 8812381,
-    };
-    return {
-      ...userResponse,
-    };
-  }
+  
 
   @Query(() => [userModule])
   async getUsers() {

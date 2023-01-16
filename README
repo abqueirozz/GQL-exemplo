@@ -1,0 +1,59 @@
+## Graphql ##
+
+- Alternativa para as arquiteturas REST.
+- Entrada e saída "typadas".
+- Fornece exatamente os dados que os clientes solicitam.
+
+# Server vs Federaion
+
+- Server: Pode-se considerar um service ou microservice. 
+          Uma unidade.
+
+- Federation: Reúne diferentes serviços em um endpoint de API.
+              Junção de unidades
+
+# Schema switching vs Federaion
+
+- Entregam a mesma coisa, mas de maneira diferente.
+- Federation é o mais usado atualmente.
+- Para maiores diferenças entre ambos, olhar a leitura [1].
+
+# Query Mutation Subscribe
+
+- Forma de comunicação entre o client e o server
+- Podes-se comparar com o GET/POST quando lidamos com REST
+- Query (GET): Usada para o fetch da dados no servidor
+- Mutation (POST): Usadas ​​para modificar dados do server-side.
+                   Essencial entender sua estrutura ao definir uma mutação, incluindo a definição de tipo, o nome da mutação e as definições de variáveis [6].
+- Subscribe: Usada para dados em tempo real. A Api mantem-se ouvindo um tópico e emite um dado sempre que o tópico for alterado.
+
+# Vantagens
+
+- Evitar overfetching.
+- Evitar underfetching.
+- Escalabilidade para microserviços.
+
+# Desvantagens
+
+- Mais verboso.
+- Pode gerar overkill para pequenas aplicações.
+- Só aceita formato JSON.
+
+# Schema First vs Code First 
+
+- Schema First: Nessa abordagem cria-se o schema antes de codar as funções [7].
+- Code First: Nessa abordagem cria-se o código antes de codar os schemas [7].
+
+# Códigos
+
+- apollo-gql: Code First - aplicação usando ferramentas populares do mercado para facilitar o desenvolvimento - Typescript.
+- simple-graphql: Schema First- aplicação usando ferramentas simples e básicas do GRAPHQL, mostrando uma abordagem mais pura da linguagem - Javascript.
+
+# Leituras recomendadas
+[1] https://tyk.io/blog/an-introduction-to-graphql-federation/
+[2] https://www.encora.com/insights/introduction-to-graphql
+[3] https://graphql.org/
+[4] https://www.apollographql.com/docs/apollo-server/
+[5] https://typegraphql.com/
+[6] https://fauna.com/blog/graphql-mutations
+[7] https://blog.logrocket.com/code-first-vs-schema-first-development-graphql/

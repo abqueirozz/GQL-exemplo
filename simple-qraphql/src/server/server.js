@@ -14,9 +14,5 @@ export function runServer() {
 
     Routers(app)
 
-    app.listen(PORT, () => console.log(`server on in port ${PORT}`))
+    app.listen(PORT, () => console.log(`server on at port ${PORT}`))
 }
-
-
-
-
